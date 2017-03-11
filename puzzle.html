@@ -17,22 +17,22 @@
 
 <div id="contentWrap">
 <div id="content">
-<div id="center"> 
+<div id="center">
         <h1>Игра в загадки</h1>
 <div id="box">
 
 <form action="" method="GET">
 <label for="firstQuestion">
-    Сверху кожа, снизу тоже, а посередине - пусто
+    Сверху кожа, снизу тоже, а посредине - пусто
 </label>
 <input type="text" name="question1" id="firstQuestion">
 
-<label for="secondQuestion">    
-  Идёт, идёт, до берега дойдёт - исчезнет
+<label for="secondQuestion">
+  Идёт, идёт, до берега дойдёт - и исчезнет
 </label>
 <input type="text" name="question2" id="secondQuestion">
 
-<label for="thirdQuestion">    
+<label for="thirdQuestion">
 Сидит дед, во сто шуб одет, кто его раздевает - слезы проливает
 </label>
 <input type="text" name="question3" id="thirdQuestion">
@@ -49,7 +49,7 @@ if (!empty ($_GET['question1'])&&!empty($_GET['question2'])&&!empty($_GET['quest
         echo 'Молодец! Первую отгадал!';
         $score++;
      } else {
-         echo 'Неправильно';  
+         echo 'Неправильно';
      }
 
      echo '<br>';
@@ -59,7 +59,7 @@ if (!empty ($_GET['question1'])&&!empty($_GET['question2'])&&!empty($_GET['quest
         echo 'Вторая - правильно!';
         $score++;
      } else {
-         echo 'Неправильно';  
+         echo 'Неправильно';
      }
 
      echo '<br>';
@@ -69,10 +69,10 @@ if (!empty ($_GET['question1'])&&!empty($_GET['question2'])&&!empty($_GET['quest
         echo 'Ну, это легко';
         $score++;
      } else {
-         echo 'Неправильно';  
+         echo 'Неправильно';
      }
 
-     
+
      echo '<br><br>';
      echo 'Вы угадали ' .$score . ' загадок';
      }
